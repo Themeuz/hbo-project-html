@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'STREET__', 'STRCMIT_', sans-serif;
+    background-image: linear-gradient(to top,black, #002be5);
+    color: #e6e6e6;
+}
+
+.header {
+    background-color: #090925;
+    color: white;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.account-menu {
+    position: relative;
+    top: 0px;
+    left: 350px;
+}
+
+.menu{
+    position: relative;
+    top: 0px;
+    right: 240px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-menu {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+}
+
+.menu, .account-menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.menu li, .account-menu li {
+    font-family: STRCMIT_, sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu li a, .account-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.menu li a:hover, .account-menu li a:hover {
+    background-color: rgba(236, 231, 231, 0.63);
+
+}
+
+.highlighted-text {
+    margin-top: 15em;
+    text-align: center;
+
+}
+
+.highlighted-text p {
+    font-size: 26pt;
+    font-family: 'STRCMIT_', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    letter-spacing: .2rem;
+
+}
+
+.imagem-destaque{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 25px;
+    padding: 0 10px;
+}
+.imagem-destaque img{
+    max-width: 120px;
+    height: 35px;
+}
+
+.novidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+
+}
+
+.catalogo {
+    justify-content: center;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.catalogo img:hover {
+    transform: scale(1.15);
+}
+
+.filmes-em-geral {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+    column-gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
