@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'STREET__', 'STRCMIT_', sans-serif;
-    background-image: linear-gradient(to top,black, #002be5);
+    background-image: linear-gradient(to top, black, #002be5);
     color: #e6e6e6;
 }
 
@@ -24,10 +24,10 @@ body {
     left: 350px;
 }
 
-.menu{
+.menu {
     position: relative;
-    top: 0px;
-    right: 240px;
+    top: 5px;
+    right: 220px;
 }
 
 .navbar {
@@ -40,9 +40,9 @@ body {
 }
 
 .logo-menu {
-    position: relative;
-    top: 0px;
-    right: 0px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
 }
 
 .navbar a {
@@ -53,11 +53,10 @@ body {
 .menu, .account-menu {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .menu li, .account-menu li {
@@ -69,7 +68,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .menu li a, .account-menu li a {
@@ -79,18 +77,15 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-
 }
 
 .menu li a:hover, .account-menu li a:hover {
     background-color: rgba(236, 231, 231, 0.63);
-
 }
 
 .highlighted-text {
     margin-top: 15em;
     text-align: center;
-
 }
 
 .highlighted-text p {
@@ -100,10 +95,9 @@ body {
     border-radius: 10px;
     display: inline-block;
     letter-spacing: .2rem;
-
 }
 
-.imagem-destaque{
+.imagem-destaque {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -111,17 +105,17 @@ body {
     margin: 25px;
     padding: 0 10px;
 }
-.imagem-destaque img{
+
+.imagem-destaque img {
     max-width: 120px;
     height: 35px;
 }
 
-.novidades{
+.novidades {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     font-size: 20px;
-
 }
 
 .catalogo {
@@ -140,10 +134,66 @@ body {
 
 .filmes-em-geral {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 120px;
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.categoria p {
+    font-size: 26px;
+    font-family: 'STRCMIT_', sans-serif;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.categoria .movie-item-container {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    word-break: break-all;
-    column-gap: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+.movie-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-item img {
+    display: block;
+    width: 230px;
     transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.movie-item .movie-title {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(74, 73, 73, 0.63);
+    color: #fff;
+    transition: opacity 0.6s ease;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.movie-item:hover .movie-title {
+    opacity: 1;
+}
+
+.movie-item:hover img {
+    transform: scale(1.15);
 }
